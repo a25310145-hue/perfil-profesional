@@ -146,6 +146,18 @@
     font-size:13px; color:var(--text-mute); background:var(--panel-2); font-family:var(--font-mono);
     border-left:3px solid var(--amber-dim); padding:10px 14px; border-radius:0 6px 6px 0; margin-top:18px;
   }
+
+  .evidence-label{
+    font-family:var(--font-mono); font-size:11px; color:var(--green); text-transform:uppercase;
+    letter-spacing:0.04em; margin:14px 0 8px;
+  }
+  .evidence-label::before{content:"✓ ";}
+  .evidence-grid{display:flex; gap:10px; flex-wrap:wrap;}
+  .evidence-grid .evidence-item{flex:1 1 0; width:31%;}
+  .evidence-grid.single .evidence-item{width:280px; flex:none;}
+  .evidence-item{background:var(--panel-2); border:1px solid var(--line-strong); border-radius:6px; padding:6px; text-align:center; box-sizing:border-box;}
+  .evidence-item img{width:100%; height:auto; border-radius:4px; display:block;}
+  .evidence-item .cap{font-family:var(--font-mono); font-size:10.5px; color:var(--text-mute); margin-top:6px;}
 </style>
 </head>
 <body>
@@ -204,7 +216,7 @@
       <dt>Edad</dt><dd>21 años</dd>
       <dt>Ubicación</dt><dd>Zona metropolitana de Guadalajara, Jalisco, México</dd>
       <dt>Programa</dt><dd>Ingeniería en Desarrollo de Software — 3er año</dd>
-      <dt>Institución</dt><dd><a href="https://www.ceti.mx/" target="_blank" rel="noopener">CETI Colomos</a> (Centro de Enseñanza Técnica Industrial)</dd>
+      <dt>Institución</dt><dd><a href="https://www.colomos.ceti.mx/templates/ofertaEducativa/ids.php" target="_blank" rel="noopener">CETI Colomos</a> (Centro de Enseñanza Técnica Industrial)</dd>
       <dt>Área de interés</dt><dd>Ciberseguridad, en todas sus ramas (redes, defensa, pentesting)</dd>
     </dl>
   </section>
@@ -253,14 +265,14 @@
       <h3>Ingeniería en Desarrollo de Software</h3>
       <div class="meta">CETI Colomos · en curso, 3er año</div>
       <p>Formación en programación, estructuras de datos, cálculo, métodos numéricos y desarrollo de software.</p>
-      <div class="link-row"><a href="https://www.colomos.ceti.mx/templates/ofertaEducativa/ids.php" target="_blank" rel="noopener">www.ceti.mx</a></div>
+      <div class="link-row"><a href="https://www.colomos.ceti.mx/templates/ofertaEducativa/ids.php" target="_blank" rel="noopener">ver oferta educativa de la carrera</a></div>
     </div>
     <div class="card">
       <h3>Introduction to Cybersecurity</h3>
       <div class="meta">Cisco Networking Academy · certificado obtenido · 15 nov 2024</div>
       <p>Fundamentos de ciberseguridad: amenazas, vulnerabilidades, protección de datos y buenas prácticas de defensa.</p>
       <div class="link-row">
-        <a href="./certificado-cybersecurity.pdf" target="_blank" rel="noopener">ver certificado (PDF)</a>
+        <a href="https://a25310145-hue.github.io/perfil-profesional/certificado-cybersecurity.pdf" target="_blank" rel="noopener">ver certificado (PDF)</a>
         &nbsp;·&nbsp;
         <a href="https://www.netacad.com/" target="_blank" rel="noopener">www.netacad.com</a>
       </div>
@@ -270,7 +282,7 @@
       <div class="meta">Cisco Networking Academy · certificado obtenido · 30 abr 2024</div>
       <p>Conceptos de dispositivos conectados, sensores y arquitectura de redes IoT.</p>
       <div class="link-row">
-        <a href="./certificado-iot.pdf" target="_blank" rel="noopener">ver certificado (PDF)</a>
+        <a href="https://a25310145-hue.github.io/perfil-profesional/certificado-iot.pdf" target="_blank" rel="noopener">ver certificado (PDF)</a>
         &nbsp;·&nbsp;
         <a href="https://www.netacad.com/" target="_blank" rel="noopener">www.netacad.com</a>
       </div>
@@ -290,7 +302,21 @@
       elaboré la tesina correspondiente documentando el proceso completo (análisis, diseño, desarrollo y
       resultados). Completé el proyecto y posteriormente lo <b style="color:var(--text)">vendí a un cliente
       real</b>, validando su viabilidad comercial además de la académica.</p>
-      <p><span class="pending">sin evidencia - Sitio en Adaptación</span></p>
+      <div class="evidence-label">Evidencia — tesina y capturas del sistema</div>
+      <div class="evidence-grid">
+        <div class="evidence-item">
+          <img src="img/portada-tesina.png" alt="Portada de la tesina Apocalipto Gym">
+          <div class="cap">Portada de la tesina</div>
+        </div>
+        <div class="evidence-item">
+          <img src="img/pwa-admin.png" alt="Panel de administrador de la PWA">
+          <div class="cap">Panel de administrador</div>
+        </div>
+        <div class="evidence-item">
+          <img src="img/pwa-cliente.png" alt="Vista de cliente de la PWA">
+          <div class="cap">Vista de cliente</div>
+        </div>
+      </div>
     </div>
     <div class="card">
       <h3>PWA para fomento a la lectura — CETI Tonalá</h3>
@@ -305,6 +331,13 @@
       del Mercado Municipal Felipe Ángeles, Guadalajara. Diseñé y apliqué una encuesta con 63 respuestas
       válidas, elaboré la bibliografía en formato APA 7, diseñé un póster de investigación y di una
       presentación oral de 7 minutos ante el grupo, con sesión de preguntas y respuestas.</p>
+      <div class="evidence-label">Evidencia — cartel de investigación</div>
+      <div class="evidence-grid single">
+        <div class="evidence-item">
+          <img src="img/cartel-investigacion.png" alt="Cartel de investigación sobre informalidad en microempresas">
+          <div class="cap">¿Por qué permanecen informales? — Mercado Felipe Ángeles</div>
+        </div>
+      </div>
     </div>
 
     <h3 style="font-family:var(--font-mono); font-size:13px; color:var(--text-mute); text-transform:uppercase; letter-spacing:0.04em; margin-top:26px;">iv. Idiomas</h3>
@@ -324,12 +357,19 @@
       <h3>Venta de una PWA de gestión desarrollada como proyecto de titulación</h3>
       <p>Logré comercializar la aplicación web que construí para la gestión de un gimnasio, convirtiendo un
       proyecto académico en un producto con demanda real. <span class="pending">Sin contrato, hecho por palabra</span></p>
+      <div class="link-row"><a href="#actividades">ver evidencia (tesina y capturas) en Actividades ↑</a></div>
     </div>
     <div class="card">
       <h3>Investigación académica presentada ante el grupo</h3>
       <p>Diseñé, apliqué y presenté oralmente una investigación de campo sobre informalidad en
-      microempresas, con recolección de datos primarios (63 encuestas válidas).
-      <span class="pending">evidencia no disponible — cartel extraviado</span></p>
+      microempresas, con recolección de datos primarios (63 encuestas válidas).</p>
+      <div class="evidence-label">Evidencia — cartel de investigación</div>
+      <div class="evidence-grid single">
+        <div class="evidence-item">
+          <img src="img/cartel-investigacion.png" alt="Cartel de investigación sobre informalidad en microempresas">
+          <div class="cap">¿Por qué permanecen informales? — Mercado Felipe Ángeles</div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -390,6 +430,17 @@
 
 <footer>
   <div class="wrap">
+    <div style="text-align:center; margin-bottom:22px;">
+      <a href="https://a25310145-hue.github.io/perfil-profesional/" target="_blank" rel="noopener"
+         style="display:inline-flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:14px;
+                color:#0d1117; background:var(--amber); border:none; border-radius:6px; padding:10px 18px;
+                font-weight:600;">
+        ➜ Visitar sitio interactivo (versión animada)
+      </a>
+      <div style="font-family:var(--font-mono); font-size:11.5px; color:var(--text-mute); margin-top:8px;">
+        https://a25310145-hue.github.io/perfil-profesional/
+      </div>
+    </div>
     <p>Documento generado como perfil profesional — CETI Colomos · última actualización: agosto 2026</p>
   </div>
 </footer>
